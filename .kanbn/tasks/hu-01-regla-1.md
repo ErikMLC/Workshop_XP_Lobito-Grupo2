@@ -1,6 +1,6 @@
 ---
 created: 2023-12-23T19:17:57.882Z
-updated: 2023-12-23T19:17:57.875Z
+updated: 2023-12-24T18:57:11.995Z
 assigned: Erick
 progress: 0
 tags: []
