@@ -1,23 +1,23 @@
 import java.util.Scanner;
 
-public class main {
-        Game game = new Game();
+public class Main {
+    public static void main(String[] args) {
+        Implementacion game = new Implementacion();
         Scanner scanner = new Scanner(System.in);
-
-        while (true) {
-            System.out.println(game); // Assumes Game has a toString method to display state
-
-            System.out.println("Enter the character to move (OBSERVER, GRAPES, REDHOOD, WOLF):");
-            String input = scanner.nextLine();
-
-            try {
-                Personaje character = Personaje.valueOf(input.toUpperCase());
-                Member member = game.getMember(character);
-
-                game.makeMove(member);
-            } catch (IllegalArgumentException e) {
-                System.out.println("Invalid input. Please try again.");
-            }
+        
+        String movimientoPersonaje= "";
+        
+        while(!game.ganador() && !game.perdidaLlegada(movimientoPersonaje) && !game.perdidaSalida() ){
+            game.imprimirEstado();
+            System.out.print("\nEl observador transporta a: ");
+            movimientoPersonaje = scanner.next();
+            game.movimientos(movimientoPersonaje);
+            System.out.println();
         }
-    }  
+        if(game.ganador()){
+            System.out.println(" =====  GANASTE =====");
+        } else if(game.perdidaSalida() || game.perdidaLlegada(movimientoPersonaje)){
+            System.out.println(" ===== PERDISTE =====");
+        }
+    }
 }
