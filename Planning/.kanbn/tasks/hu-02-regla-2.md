@@ -9,9 +9,19 @@ completed: 2023-12-23T00:00:00.000Z
 
 # hu-02-regla-2
 
-El programa debe validar de forma correcta y automática los movimientos, siguiendo las siguientes restricciones: 
-- El lobo no debe quedarse solo con caperucita.
-- Caperucita no debe quedarse solo con la uva
+Descripción:
+Si lobo está solo con caperucita entonces el lobo se come a caperucita
+Si caperucita está sola con las uvas entonces caperucita se come las uvas
+
+Historia de Usuario:
+Como usuario del programa de validación de movimientos, quiero asegurarme de que las interacciones entre el lobo, caperucita y la uva estén correctamente validadas, para garantizar que el lobo nunca se quede solo con caperucita y que caperucita nunca se quede solo con la uva. Esto es esencial para mantener la integridad de la historia y evitar situaciones inapropiadas.
+
+Criterios de Aceptación:
+1. Cuando el lobo y caperucita están en la misma ubicación, la validación debe ser exitosa si hay presencia de al menos otro personaje (por ejemplo, la uva).
+2. La validación debe fallar si el lobo está solo con caperucita, indicando un movimiento incorrecto.
+3. Cuando caperucita y la uva están en la misma ubicación, la validación debe ser exitosa si hay presencia de al menos otro personaje (por ejemplo, el lobo).
+4. La validación debe fallar si caperucita está sola con la uva, indicando un movimiento incorrecto.
+
 
 ## Comments
 
