@@ -1,7 +1,7 @@
 ---
 created: 2023-12-23T19:19:58.726Z
-updated: 2023-12-23T19:20:14.997Z
-assigned: Aiden
+updated: 2023-12-25T20:58:14.961Z
+assigned: Erik
 progress: 0
 tags: []
 completed: 2023-12-23T00:00:00.000Z
@@ -22,9 +22,11 @@ Criterios de Aceptación:
 3. Cuando caperucita y la uva están en la misma ubicación, la validación debe ser exitosa si hay presencia de al menos otro personaje (por ejemplo, el lobo).
 4. La validación debe fallar si caperucita está sola con la uva, indicando un movimiento incorrecto.
 
-
 ## Comments
 
 - author: Britanny
   date: 2023-12-23T19:20:11.094Z
+  
+- author: Britanny
+  date: 2023-12-25T16:04:11.094Z
   
