@@ -11,6 +11,10 @@
 
 El juego se representa mediante dos listas: leftSide (lado izquierdo) y rightSide (lado derecho), que contienen los elementos presentes en cada lado del río.
 
+### Método move
+
+La función move mueve un personaje de una lista (leftSide o rightSide) a otra.
+
 ### Método printState
 
 La función printState imprime el estado actual del juego, mostrando los elementos en cada lado del río.
