@@ -4,12 +4,8 @@ Project Description
 
 ### Todo
 
-- Historias Usuario  
-- Metafora  
 - PlanIteracciones  
-- XP-Roadmap  
 - Diagrama de casos de Uso  
-- Diagrama de Clases  
 - Estandarés  
 - Code  
 
@@ -18,4 +14,8 @@ Project Description
 
 ### Done
 
+- Diagrama de Clases  
+- XP-Roadmap  
+- Metafora  
+- Historias Usuario  
 

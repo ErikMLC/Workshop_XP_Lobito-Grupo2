@@ -1,9 +1,10 @@
 ---
 created: 2023-12-23T19:17:57.882Z
-updated: 2023-12-24T18:57:11.995Z
+updated: 2023-12-25T20:57:03.012Z
 assigned: Erick
 progress: 0
 tags: []
+completed: 2023-12-25T20:57:03.012Z
 ---
 
 # HU-01: Regla 1
@@ -23,3 +24,6 @@ Criterio de aceptación:
 - author: Britanny 
   date: 2023-12-23T19:16:45.591Z
   
+- author: Erik
+  date: 2023-12-25T19:16:03.591Z
+ 
