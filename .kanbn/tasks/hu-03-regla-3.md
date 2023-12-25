@@ -6,7 +6,7 @@ progress: 0
 tags: []
 ---
 
-# hu-03-regla-3
+# HU-03: Regla 3
 
 Descripción:
 Si el movimiento es erróneo se debe recibir retroalimentación

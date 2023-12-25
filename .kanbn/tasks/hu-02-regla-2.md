@@ -7,7 +7,7 @@ tags: []
 completed: 2023-12-23T00:00:00.000Z
 ---
 
-# hu-02-regla-2
+# HU-2: Regla 2
 
 Descripción:
 Si lobo está solo con caperucita entonces el lobo se come a caperucita
