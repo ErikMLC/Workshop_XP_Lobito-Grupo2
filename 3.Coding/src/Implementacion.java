@@ -54,5 +54,56 @@ public class Implementacion {
         }
         posicion = 1 - posicion;
     }
+
+    private int encontrarPersonaje(String personaje, String[] personajes) {
+        for (int i = 0; i < personajes.length; i++) {
+            if (personaje.equals(personajes[i])) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public boolean ganador(){
+        for (String personaje : salida) {
+            if (personaje != null) {
+                return false;
+            }
+        }
+        return true;
+    }
+  
     
+    public boolean perdidaSalida(){
+    if (posicion == 0) {
+        for (String personaje : salida) {
+            if (personaje != null) {
+                return false;
+            }
+        }
+        return true;
+    } else {
+        if ((encontrarPersonaje("C", salida) != -1 && encontrarPersonaje("L", salida) != -1)) {
+            return true;
+        }
+        if ((encontrarPersonaje("C", salida) != -1 && encontrarPersonaje("U", salida) != -1)) {
+            return true;
+        }
+    }
+    return false;
+    }
+    
+    public boolean perdidaLlegada(String movimientoPersonaje){
+     
+        if (movimientoPersonaje.equals("N")) {
+            if ((encontrarPersonaje("C", llegada) != -1 && encontrarPersonaje("L", llegada) != -1)) {
+                return true;
+            }
+            if ((encontrarPersonaje("C", llegada) != -1 && encontrarPersonaje("U", llegada) != -1)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
