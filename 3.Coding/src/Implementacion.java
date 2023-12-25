@@ -1,3 +1,4 @@
+
 public class Implementacion {
     public String[] personajes = {"C", "L", "U"};
     public String[] salida = {"C", "L", "U"};

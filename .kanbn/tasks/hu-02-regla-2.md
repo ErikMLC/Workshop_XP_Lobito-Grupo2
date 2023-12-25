@@ -27,6 +27,6 @@ Criterios de Aceptación:
 - author: Britanny
   date: 2023-12-23T19:20:11.094Z
   
-- author: Britanny
+- author: Erik
   date: 2023-12-25T16:04:11.094Z
   
