@@ -5,10 +5,10 @@ public class Implementacion {
     public String[] llegada = new String[3];
     public int posicion = 0; // Departure 0, llegada 1
 
-    public void imprimirEstado(){
+    public void imprimirEstado() {
         System.out.println("\t ##### Problema del Lobo, la Caperucita Roja y las Uvas ##### ");
         System.out.println("\nPERSONAJES: ");
-        System.out.println("\nL:Lobo, C:Caperucita, U:Uvas, N:Nada (No lleva Nada)");       
+        System.out.println("\nL:Lobo, C:Caperucita, U:Uvas, N:Nada (No lleva Nada)");
         System.out.print("\nPersonajes en Salida: ");
         imprimirPersonajes(salida);
         System.out.print("\nPersonajes en llegada: ");
@@ -17,7 +17,7 @@ public class Implementacion {
         System.out.printf("\nOrilla actual: %s%n", estado);
     }
 
-    private void imprimirPersonajes(String[] personajes){
+    private void imprimirPersonajes(String[] personajes) {
         for (String personaje : personajes) {
             if (personaje != null) {
                 System.out.print(personaje + " ");
@@ -27,7 +27,7 @@ public class Implementacion {
     }
 
     public void movimientos(String movimientoPersonaje) {
-        if (movimientoPersonaje.equals("N")){
+        if (movimientoPersonaje.equals("N")) {
             posicion = 1 - posicion;
             return;
         }
@@ -65,7 +65,7 @@ public class Implementacion {
         return -1;
     }
 
-    public boolean ganador(){
+    public boolean ganador() {
         for (String personaje : salida) {
             if (personaje != null) {
                 return false;
@@ -73,38 +73,31 @@ public class Implementacion {
         }
         return true;
     }
-  
-    
-    public boolean perdidaSalida(){
-    if (posicion == 0) {
-        for (String personaje : salida) {
-            if (personaje != null) {
-                return false;
+
+    public boolean perdidaSalida() {
+        if (posicion == 0) {
+            for (String personaje : salida) {
+                if (personaje != null) {
+                    return false;
+                }
             }
-        }
-        return true;
-    } else {
-        if ((encontrarPersonaje("C", salida) != -1 && encontrarPersonaje("L", salida) != -1)) {
             return true;
-        }
-        if ((encontrarPersonaje("C", salida) != -1 && encontrarPersonaje("U", salida) != -1)) {
-            return true;
-        }
-    }
-    return false;
-    }
-    
-    public boolean perdidaLlegada(String movimientoPersonaje){
-     
-        if (movimientoPersonaje.equals("N")) {
-            if ((encontrarPersonaje("C", llegada) != -1 && encontrarPersonaje("L", llegada) != -1)) {
-                return true;
-            }
-            if ((encontrarPersonaje("C", llegada) != -1 && encontrarPersonaje("U", llegada) != -1)) {
+        } else {
+            if ((encontrarPersonaje("C", salida) != -1 && encontrarPersonaje("L", salida) != -1)
+                    || (encontrarPersonaje("C", salida) != -1 && encontrarPersonaje("U", salida) != -1)) {
                 return true;
             }
         }
         return false;
     }
 
+    public boolean perdidaLlegada(String movimientoPersonaje) {
+        if (movimientoPersonaje.equals("N")) {
+            if ((encontrarPersonaje("C", llegada) != -1 && encontrarPersonaje("L", llegada) != -1)
+                    || (encontrarPersonaje("C", llegada) != -1 && encontrarPersonaje("U", llegada) != -1)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
