@@ -9,9 +9,6 @@ completed: 2023-12-25T20:57:06.259Z
 
 # hu-03-regla-3
 
-Se debe recibir retroalimentación clara por medio de mensajes cuando se haga un movimiento incorrecto.
-El juego se gana cuando los 3 personajes hayan cruzado al otro lado del río.
-
 Descripción:
 Si el movimiento es erróneo se debe recibir retroalimentación
 
