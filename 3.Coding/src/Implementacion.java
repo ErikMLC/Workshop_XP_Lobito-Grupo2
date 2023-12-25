@@ -8,7 +8,7 @@ public class Implementacion {
     public void imprimirEstado() {
         System.out.println("\t ##### Problema del Lobo, la Caperucita Roja y las Uvas ##### ");
         System.out.println("\nPERSONAJES: ");
-        System.out.println("\nL:Lobo, C:Caperucita, U:Uvas, N:Nada (No lleva Nada)");
+        System.out.println("\n< L > Lobo, < C > Caperucita, < U > Uvas, < N > Nada (No lleva Nada)");
         System.out.print("\nPersonajes en Salida: ");
         imprimirPersonajes(salida);
         System.out.print("\nPersonajes en llegada: ");
