@@ -8,6 +8,8 @@ tags: []
 
 # HU-01: Regla 1
 
+Descripción: Si el barco está ocupado por 1 personaje (excluyendo al observador) => no se puede subir otro personaje al barco
+
 Historia de usuario:
 Como usuario, quiero poder seleccionar y mover los personajes (lobo, caperucita y uvas) a través del río utilizando un barco manejado por el observador. El observador no puede bajarse del barco y solo puede transportar un personaje a la vez.
 

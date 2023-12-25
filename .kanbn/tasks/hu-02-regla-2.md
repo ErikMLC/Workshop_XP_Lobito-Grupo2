@@ -10,8 +10,8 @@ completed: 2023-12-23T00:00:00.000Z
 # HU-2: Regla 2
 
 Descripción:
-Si lobo está solo con caperucita entonces el lobo se come a caperucita
-Si caperucita está sola con las uvas entonces caperucita se come las uvas
+Si lobo está solo con caperucita => el lobo se come a caperucita
+Si caperucita está sola con las uvas => caperucita se come las uvas
 
 Historia de Usuario:
 Como usuario del programa de validación de movimientos, quiero asegurarme de que las interacciones entre el lobo, caperucita y la uva estén correctamente validadas, para garantizar que el lobo nunca se quede solo con caperucita y que caperucita nunca se quede solo con la uva. Esto es esencial para mantener la integridad de la historia y evitar situaciones inapropiadas.

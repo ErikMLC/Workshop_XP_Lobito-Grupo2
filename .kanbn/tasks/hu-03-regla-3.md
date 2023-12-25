@@ -9,7 +9,7 @@ tags: []
 # HU-03: Regla 3
 
 Descripción:
-Si el movimiento es erróneo se debe recibir retroalimentación
+Si el movimiento es erróneo => se debe recibir retroalimentación
 
 Historia Usuario:
 Como usuario del juego, quiero recibir retroalimentación clara a través de mensajes cuando realice un movimiento incorrecto. Además, deseo saber cuándo he ganado el juego, es decir, cuando los tres personajes hayan cruzado con éxito al otro lado del río. Esta retroalimentación es esencial para mejorar mi experiencia de juego y comprender mi progreso.
