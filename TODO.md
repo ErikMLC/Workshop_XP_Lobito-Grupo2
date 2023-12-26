@@ -4,16 +4,16 @@ Project Description
 
 ### Todo
 
-- PlanIteracciones  
-- Diagrama de casos de Uso  
-- Estandarés  
-- Code  
 
 ### In Progress
 
 
 ### Done
 
+- Code  
+- Estandarés  
+- Diagrama de casos de Uso  
+- PlanIteracciones  
 - Diagrama de Clases  
 - XP-Roadmap  
 - Metafora  
